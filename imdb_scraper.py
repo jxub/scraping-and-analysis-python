@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 
 result = requests.get("http://www.imdb.com/chart/top")
 
+#try...except faster than if in that case
 try:
     #we save the content of the page
     content = result.text
